@@ -1,13 +1,99 @@
-body {
+html, body { 
+  width: 100%;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF; 
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  font-size: large;
+}
+
+section {
+  flex: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.card{
+  background: none;
+}
+
+.logImgBackgroud{
+background-image: url(./assets/appImageDef.png);
+background-size: cover;
+background-position: center;
+}
+
+.cardTextAbout::before{
+  content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Define a altura igual à altura do card */
+    width: 5px; /* Define a largura da borda  */
+    background-color: #164863; 
+}
+
+#ImgCardapp{
+  max-width: 650px;
+  border-radius: 120px;
+}
+#startnowbtn {
+  margin-top: 10px;
+  background-color: #432de3;
+  border-color: #432de3;
+}
+a{
+  text-decoration: none;
+}
+
+.nav-link{   
+  color: black;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.btn-primary {
+  background-color: #427D9D;
+  border-color: #427D9D;
+  border-radius: 15px;
+}
+
+.btn-danger {
+  background-color: #88888f;
+  border-color: #88888f;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  color: black;
+}
+
+/* .card:hover{
+  box-shadow: 8px 8px 15px 12px rgba(205, 205, 205, 0.25);
+} */
+
+
+.CardFooter{
+  color: white;
+  font-size:medium;
+  background-color: #2b3338;
+  text-align: center;
+}
+
+.cardTextDashboard::before{
+  content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Define a altura igual à altura do card */
+    width: 3px; /* Define a largura da borda  */
+    background-color: grey; 
 }
