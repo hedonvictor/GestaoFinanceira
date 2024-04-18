@@ -1,0 +1,10 @@
+.cardTextDashboard::before{
+    content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%; /* Define a altura igual à altura do card */
+      width: 3px; /* Define a largura da borda  */
+      background-color: grey; 
+  }
